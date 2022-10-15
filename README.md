@@ -31,6 +31,26 @@
 * Vuetify
 * TypeScript
 
+### ブランチ名
+   - #### 命名規則
+     - `feature/〇〇/機能名`
+     - ○○は、開発者の名前 
+
+### Dockerのセットアップ
+```
+# 最初のセットアップ
+docker-compose build
+
+# コンテナ立ち上げ
+docker-compose up (-dでバックグランドで起動させる)
+
+# コンテナ停止
+docker-compose down
+
+# statusの確認
+docker-compose ps
+```
+
 ### 独自技術
 #### ハッカソンで開発した独自機能・技術
 * 独自で開発したものの内容をこちらに記載してください
