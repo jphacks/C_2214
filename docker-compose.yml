@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npm run dev
+    volumes:
+      - .:/usr/src/app
+    stdin_open: true
+    tty: true
+    environment:
+      TZ: Asia/Tokyo
+    ports:
+      - 8000:8000
