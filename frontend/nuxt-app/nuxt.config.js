@@ -37,6 +37,7 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify'
   ],
+  serverMiddleware: ['~/api'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
