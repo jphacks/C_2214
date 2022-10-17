@@ -20,10 +20,11 @@
 
 ## 開発技術
 ### 活用した技術
+* PWA
+* Docker
 #### API・データ
 * gooラボAPI
 * MQPlatform API(β)
-* PWA
 
 #### フレームワーク・ライブラリ・モジュール
 * Node.js
@@ -41,6 +42,9 @@
 # 最初のセットアップ
 docker-compose build
 
+# 初回：依存関係インストール
+docker-compose run --rm web yarn install
+
 # コンテナ立ち上げ
 docker-compose up (-dでバックグランドで起動させる)
 
@@ -49,6 +53,9 @@ docker-compose down
 
 # statusの確認
 docker-compose ps
+
+# ログの確認
+docker-compose logs
 ```
 
 ### 独自技術
